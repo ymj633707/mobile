@@ -1,0 +1,318 @@
+* {
+    margin: 0; padding: 0;
+}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Tilt Neon', cursive; */
+
+body {
+    background-color: #000;
+}
+
+    /*--------------------- header ---------------------*/
+    .header {
+        height: 60px;
+        background-color: #000;
+        position: relative; 
+        font-family: 'Tilt Neon', cursive;
+    }
+    .header .logo_box {
+        text-align: center;
+        line-height: 70px;
+    }
+    .header img { 
+        width: 45%;
+       
+    }
+
+ /*--------------------- header - lnb_ham_menu ---------------------*/
+
+ #lnb_chk {
+    display: none;
+}
+#lnb_chk:checked ~ .lnb_ham_menu {display: block;}
+#lnb_chk ~ .lnb_ham_menu {display: none;}
+
+#lnb_chk:checked ~ .label .open_lnb {display: none;}
+#lnb_chk:checked ~ .label .close_lnb {display: block;}
+
+#lnb_chk ~ .label .open_lnb {display: block;}
+#lnb_chk ~ .label .close_lnb {display: none;}
+
+.header .label {
+    position: absolute;
+    left: 20px; top: 15px;
+}
+.label label {
+    display: block;
+    width: 40px; height: 40px;
+    color: #fff;
+    font-size: 30px;
+}
+.lnb_ham_menu {
+    position: absolute;
+    top: 60px; left: 0;
+    width: 100%; height: 100%;
+}
+.lnb_ham_menu li{
+    width: 100%; height: 100px;
+    background-color: #000;
+    color: #6b7bb0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 100px;
+}
+.lnb_ham_menu li a {
+    color: #6b7bb0;
+}
+
+ /*--------------------- lnb_menu ---------------------*/
+ .lnb_menu {
+    display: none;
+    overflow: hidden;
+ }
+ .lnb_menu ul {
+    overflow: hidden;
+ }
+ .lnb_menu ul li {
+    float: left;
+    width: 25%; height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+ }
+ .lnb_menu ul li a{
+    color: #6b7bb0;
+ }
+
+
+
+ /*--------------------- profile_img_box ---------------------*/
+.profile_box {
+    overflow: hidden;
+    width: 100%; height: 100%;
+}
+
+.profile_img_box img {
+    width: 100%;
+}
+
+/*--------------------- profile_txt ---------------------*/
+
+.profile_txt {
+    margin: 20px 20px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.profile_txt dt {
+    float: left;
+    width: 30%;
+    color: #6b7bb0;
+    font-weight: bold;
+    height: 40px;
+}
+.profile_txt dd {
+    float: left;
+    width: 70%;
+    color: #fff;
+    height: 40px;
+}
+.profile_txt span {
+    border:1px solid #6b7bb0;
+    border-radius: 5px;
+    padding: 0px 2px;
+    box-sizing: border-box;
+}
+.profile_txt .grid_style {
+    height: 60px;
+}
+.profile_txt .record_style {
+    border: none;
+    background-color: #6b7bb0;
+    margin-left: 5px;
+}
+.profile_txt dd img {
+    width: 11%;
+    margin: 0 2px;
+}
+
+
+
+
+ /* --------------------- tab_menu --------------------- */
+ #tab01, #tab02, #tab03, #tab04, #tab05 {display: none;}
+
+ #tab01:checked ~ .sheet .sheet_01 {display: block;}
+ #tab02:checked ~ .sheet .sheet_02 {display: block;}
+ #tab03:checked ~ .sheet .sheet_03 {display: block;}
+ #tab04:checked ~ .sheet .sheet_04 {display: block;}
+ #tab05:checked ~ .sheet .sheet_05 {display: block;}
+
+ #tab01:checked ~ .label .label_01 {background-color: #40513B;}
+ #tab02:checked ~ .label .label_02 {background-color: #40513B;}
+ #tab03:checked ~ .label .label_03 {background-color: #40513B;}
+ #tab04:checked ~ .label .label_04 {background-color: #40513B;}
+ #tab05:checked ~ .label .label_05 {background-color: #40513B;}
+
+
+ .tab_menu {
+     width: 100%; height: 400px;
+     margin: 0 auto;
+ }
+ .tab_menu .label {
+     overflow: hidden;
+ }
+ .tab_menu .label01 label {
+     display: block;
+     width: 20%; height: 40px;
+     text-align: center;
+     float: left;
+     cursor: pointer;
+     line-height: 40px;
+     font-size: 14px;
+ }
+.tab_menu .label02 {
+    margin-bottom: 5px;
+}
+ .tab_menu .label_01 {
+    font-size: 14px;
+    background-color: #f2cd5f;
+    border-radius: 5px;
+ }
+ .tab_menu .label_02 {
+    font-size: 16px;
+    background-color: #FD8A8A;
+    border-radius: 5px;
+ }
+ .tab_menu .label_03 {
+    font-size: 16px;
+    background-color: #3C6255;
+    border-radius: 5px;
+ }
+ .tab_menu .label_04 {
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #363636;
+ }
+ .tab_menu .label_05 {
+    font-size: 16px;
+    background-color: #205295;
+    border-radius: 5px;
+ }
+
+ .tab_menu .sheet .sheet_01, .sheet_02, .sheet_03, .sheet_04, .sheet_05 {
+     display: none;
+     width: 100%;
+ }
+
+
+ .member_profile .member_txt dt {
+    float: left;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.member_profile .member_txt dd {
+    float: left;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+.member_profile {
+    margin-top: 10px;
+}
+
+.member_profile .member_img {
+    width: 70%; height: 70%;
+    margin: 0 auto;
+}
+.member_profile .member_img img {
+    width: 100%; height:300px;
+}
+
+.sheet_01 .member_txt dt {
+    color: #F2CD5C;
+}
+
+.sheet_02 .member_txt dt {
+    color: #FD8A8A;
+}
+.sheet_03 .member_txt dt {
+    color: #398e70;
+}
+.sheet_04 .member_txt dt {
+    color: #ccc;
+}
+.sheet_05 .member_txt dt {
+    color: #3a86e9;
+}
+
+/* --------------------- top_btn --------------------- */
+.top_btn {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    display: block;
+    width: 50px; height: 50px;
+    background-color: #6b7bb0;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+@media all and (min-width:601px) {
+    .lnb_menu {
+        display: block;
+    }
+    .header img { 
+        width: 30%;
+    }
+    .profile_box { margin-top: 20px;}
+    .profile_img_box {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+    }
+    .profile_img_box img{
+        height: 300px;
+    }
+    .profile_txt {
+        float: left;
+        width: 49%;
+        margin: 0;
+    }
+   .member_profile {
+    overflow: hidden;
+   } 
+   .member_profile .member_img {
+    float: left;
+    width: 50%; 
+   }
+   .member_profile .member_txt  {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+   }
+   .header .label {
+    display: none;
+}
+}
+
+
+

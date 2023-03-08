@@ -1,0 +1,225 @@
+* {
+    margin: 0; padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;  
+}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h1 {
+    color: #6b7bb0;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+/* font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Tilt Neon', cursive; */
+
+body {
+    background-color: #000;
+}
+
+ /*--------------------- header ---------------------*/
+ .header {
+    height: 60px;
+    background-color: #000;
+    position: relative; 
+    font-family: 'Tilt Neon', cursive;
+}
+.header .logo_box {
+    text-align: center;
+    line-height: 70px;
+}
+.header img {
+    width: 45%;
+   
+}
+
+/*--------------------- header - lnb_menu ---------------------*/
+
+#lnb_chk {
+display: none;
+}
+#lnb_chk:checked ~ .lnb_ham_menu {display: block;}
+#lnb_chk ~ .lnb_ham_menu {display: none;}
+
+#lnb_chk:checked ~ .label .open_lnb {display: none;}
+#lnb_chk:checked ~ .label .close_lnb {display: block;}
+
+#lnb_chk ~ .label .open_lnb {display: block;}
+#lnb_chk ~ .label .close_lnb {display: none;}
+
+.label {
+position: absolute;
+left: 20px; top: 15px;
+}
+.label label {
+display: block;
+width: 40px; height: 40px;
+color: #fff;
+font-size: 30px;
+}
+.lnb_ham_menu {
+position: absolute;
+top: 60px; left: 0;
+width: 100%; height: 100%;
+}
+
+.lnb_ham_menu li{
+width: 100%; height: 100px;
+background-color: #000;
+color: #6b7bb0;
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+line-height: 100px;
+}
+.lnb_ham_menu li a {
+color: #6b7bb0;
+line-height: 100px;
+}
+
+/*--------------------- lnb_menu ---------------------*/
+.lnb_menu {
+    display: none;
+    overflow: hidden;
+ }
+ .lnb_menu ul {
+    overflow: hidden;
+ }
+ .lnb_menu ul li {
+    float: left;
+    width: 25%; height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+ }
+ .lnb_menu ul li a{
+    color: #6b7bb0;
+ }
+
+
+
+
+
+/*--------------------- awards_box ---------------------*/
+.awards_box .award_img {
+    width: 100%;
+}
+.awards_box .award_img img {
+    width: 100%;
+}
+.awards_box .awards_txt {
+    width: 100%; height: 110px;
+    border-bottom: 1px solid #6b7bb0;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.awards_box .awards_txt p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.awards_box .awards_txt p i {
+    color: #6b7bb0;
+}
+.awards_box .awards_txt .point_color {
+    color: #6b7bb0;
+    font-weight: bold;
+}
+
+/* --------------------- top_btn --------------------- */
+.top_btn {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    display: block;
+    width: 50px; height: 50px;
+    background-color: #6b7bb0;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media all and (min-width:601px) {
+    .lnb_menu {
+        display: block;
+    }
+    .header img { 
+        width: 30%;
+    }
+    .header .label {
+        display: none;
+    }
+    .awards_box01 {
+        overflow: hidden;
+    }
+    .awards_box01 .award_img {
+        float: left;
+        width: 50%;
+    }
+    .awards_box01 .awards_txt_box01 {
+        float: left;
+        width: 50%;
+    }
+    .awards_box01 .awards_txt_box01 .awards_txt {
+        border-bottom: none;
+    }
+    .awards_box02 {
+        overflow: hidden;
+    }
+    .awards_box02 .award_img {
+        float: right;
+        width: 50%;
+    }
+    .awards_box02 .awards_txt {
+        float: right;
+        width: 50%;
+        border: none;
+        margin-top: 30px;
+    }
+    .awards_box03 {
+        overflow: hidden;
+    }
+    .awards_box03 .award_img {
+        float: left;
+        width: 50%;
+    }
+    .awards_box03 .awards_txt {
+        float: left;
+        width: 50%;
+        border: none;
+        margin-top: 30px;
+    }
+    .awards_box04 {
+        overflow: hidden;
+    }
+    .awards_box04 .award_img {
+        float: right;
+        width: 50%;
+    }
+    .awards_box04 .awards_txt_box02 {
+        float: right;
+        width: 50%;
+    }
+    .awards_box04 .awards_txt_box02 .awards_txt {
+        border: none;
+    }
+    .awards_box05 {
+        overflow: hidden;
+    }
+    .awards_box05 .award_img {
+        float: left;
+        width: 50%;
+    }
+    .awards_box05 .awards_txt_box03 {
+        float: left;
+        width: 50%;
+    }
+    .awards_box05 .awards_txt_box03 .awards_txt {
+        border: none;
+    }
+}

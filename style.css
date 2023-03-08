@@ -1,0 +1,16 @@
+* {margin: 0; padding: 0;}
+
+
+body {
+    width: 100%;
+    background-color: #000;
+}
+
+
+body div {
+    text-align: center;
+    margin-top: 150px;
+}
+body div img {
+    width: 70%
+}
